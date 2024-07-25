@@ -62,22 +62,7 @@ platforms = [
 
 class Library(NamedTuple):
     """
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@lgs-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=lgs-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩403G,昨31G.(0724) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@thn2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=thn2-speedtest.tools.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩749G,昨14G.(0724) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@194.44.246.206:443?flow=&security=tls&sni=ns1.gcdn.services&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#8,美国,剩229G,昨45G.(0724) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@82.213.5.50:443?flow=&encryption=none&security=tls&sni=thn2-speedtest.tools.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩749G,昨14G.(0724) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHd3LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206NDQzOndzOi9jbG91ZDp3d3cuZmxhbWViYS5pdDpub25lOnRsczp3dy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#14,美国,剩327G,昨34G.(0724) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@ns1.gcdn.services:443?flow=&security=tls&sni=ns1.gcdn.services&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#8,美国,剩229G,昨45G.(0724) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE5Ny4yMjUuMTQ1LjI2OjQ0Mzp3czovY2xvdWQ6ZS5zcGVjaWFsLmx5LmlvOm5vbmU6dGxzOmxncy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#19,美国,剩280G,昨46G.(0724) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDIwMi4xMjkuMjM2LjE2Mjo0NDM6d3M6L2Nsb3VkOnNvbWUucGVvcGxlLmhhdmUueW91LnNhbWUudGhpbmcudG8uZG86bm9uZTp0bHM6bnMxLmdjZG4uc2VydmljZXM6WydodHRwLzEuMSddOg==#11,美国,剩615G,昨13G.(0724) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDUuMTg5LjIwNy4xNDo0NDM6d3M6L2Nsb3VkOnd3dy5ld29vZHMuZ29vZ2xlLml0Om5vbmU6dGxzOmhrMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#9,美国,剩636G,昨29G.(0724) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGhrMi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6d3d3LmV3b29kcy5nb29nbGUuaXQ6bm9uZTp0bHM6aGsyLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#9,美国,剩636G,昨29G.(0724) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@95.85.92.5:443?flow=&encryption=none&security=tls&sni=lgs-speedtest.tools.gcore.com&type=ws&host=uni.hug.to&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩403G,昨31G.(0724) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDM3LjIzOS4xNDUuMjo0NDM6d3M6L2Nsb3VkOmNyZS5kcmVhbS50b3A6bm9uZTp0bHM6c3AzLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#10,美国,剩612G,昨10G.(0724) 
-
-hysteria2://NjODAtMDNzViZTc1dlODY5WU5@91.185.187.49:17443?insecure=1&sni=update.microsoft.com&alpn=&fp=&obfs=salamander&obfs-password=LhkMWI0Mzgz5t2OTNjES0#21,波兰,s0.serv00.com.
-hysteria2://qRVQxTVdJTnRNVDFScVJWUXhUVm@85.194.242.89:2400?insecure=1&sni=update.microsoft.com&alpn=&fp=&obfs=salamander&obfs-password=STlZERlNjVkpXVVho#22,波兰,s6.serv00.com. 
-    
+ 
     """
     file: str
     directory: str
