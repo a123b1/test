@@ -62,26 +62,20 @@ platforms = [
 
 class Library(NamedTuple):
     """
-
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@ns1.gcdn.services:443?flow=&encryption=none&security=tls&sni=ns1.gcdn.services&type=ws&host=sail.ocean.google&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩761G,昨15G.(0827) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@94.43.206.202:443?flow=&security=tls&sni=sp3-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#6,德国,剩200G,昨28G.(0827) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@sp3-speedtest.tools.gcore.com:443?flow=&security=tls&sni=sp3-speedtest.tools.gcore.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#6,德国,剩200G,昨28G.(0827) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@176.222.187.178:443?flow=&encryption=none&security=tls&sni=ns1.gcdn.services&type=ws&host=sail.ocean.google&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩761G,昨15G.(0827) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@185.188.144.8:443?flow=&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#8,德国,剩200G,昨43G.(0827) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@teg-speedtest.tools.gcore.com:443?flow=&security=tls&sni=teg-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#7,德国,剩185G,昨33G.(0827) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@pl1-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=pl1-speedtest.tools.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩537G,昨35G.(0827) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQG1pbjQtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTo0NDM6d3M6L2Nsb3VkOnd3dy53aGV0aGVyLnNwYWNlLm1uLmNjOm5vbmU6dGxzOm1pbjQtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#20,波兰,剩163G,昨58G.(0827) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQG5zMS5nY2RuLnNlcnZpY2VzOjQ0Mzp3czovY2xvdWQ6d3d3LmZsYW1lYmEuaXQ6bm9uZTp0bHM6bnMxLmdjZG4uc2VydmljZXM6WydodHRwLzEuMSddOg==#14,德国,剩315G,昨24G.(0827) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHRobjItc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTo0NDM6d3M6L2Nsb3VkOnNlcnYueXVnb2N4LmRldjpub25lOnRsczp0aG4yLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#15,德国,剩298G,昨24G.(0827) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@cc1-speedtest.tools.gcore.com:443?flow=&security=tls&sni=cc1-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#8,德国,剩200G,昨43G.(0827) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE4NS4yNDQuMjA5LjYxOjQ0Mzp3czovY2xvdWQ6d3d3LmZsYW1lYmEuaXQ6bm9uZTp0bHM6bnMxLmdjZG4uc2VydmljZXM6WydodHRwLzEuMSddOg==#14,德国,剩315G,昨24G.(0827) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQG55Mi1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6d3d3LmV3b29kcy5nb29nbGUuaXQ6bm9uZTp0bHM6bnkyLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#9,德国,剩463G,昨21G.(0827) 
-ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHd3LXNwZWVkdGVzdC50b29scy5nY29yZS5jb206NDQzOndzOi9jbG91ZDpzdGF0aWMuY29ybmJvcm4uaW86bm9uZTp0bHM6d3ctc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#18,波兰,剩316G,昨25G.(0827) 
-vless://ecd4054a-b635-402b-bd15-5d83bb606b89@102.67.99.50:443?flow=&encryption=none&security=tls&sni=pl1-speedtest.tools.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩537G,昨35G.(0827) 
-trojan://tDW776HerJ07nbiT8Q6LPBu@134.0.219.37:443?flow=&security=tls&sni=teg-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#7,德国,剩185G,昨33G.(0827) 
-
-hysteria2://NjODAtMDNzViZTc1dlODY5WU5@91.185.187.49:17443?insecure=1&sni=update.microsoft.com&alpn=&fp=&obfs=salamander&obfs-password=LhkMWI0Mzgz5t2OTNjES0#21,波兰,s0.serv00.com.
-hysteria2://qRVQxTVdJTnRNVDFScVJWUXhUVm@85.194.242.89:2400?insecure=1&sni=update.microsoft.com&alpn=&fp=&obfs=salamander&obfs-password=STlZERlNjVkpXVVho#22,波兰,s6.serv00.com. 
+trojan://tDW776HerJ07nbiT8Q6LPBu@lgs-speedtest.tools.gcore.com:443?flow=&security=tls&sni=lgs-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#8,德国,剩200G,昨44G.(0827) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@ny2-speedtest.tools.gcore.com:443?flow=&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#7,德国,剩185G,昨34G.(0827) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@www.gcorelabs.com:443?flow=&security=tls&sni=www.gcorelabs.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#6,德国,剩200G,昨29G.(0827) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@5.188.126.14:443?flow=&encryption=none&security=tls&sni=www.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩518G,昨37G.(0827) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@95.85.92.4:443?flow=&security=tls&sni=ny2-speedtest.tools.gcore.com&type=ws&header=none&host=api.euzzz.ru&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#7,德国,剩185G,昨34G.(0827) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@la2-speedtest.tools.gcore.com:443?flow=&encryption=none&security=tls&sni=la2-speedtest.tools.gcore.com&type=ws&host=sail.ocean.google&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩744G,昨15G.(0827) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@195.22.198.49:443?flow=&security=tls&sni=www.gcorelabs.com&type=ws&header=none&host=www.thoughtstar.cc&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#6,德国,剩200G,昨29G.(0827) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQHRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6ZS5zcGVjaWFsLmx5LmlvOm5vbmU6dGxzOnRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#19,波兰2,剩244G,昨50G.(0827) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQGthbC1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOjQ0Mzp3czovY2xvdWQ6Y3JlLmRyZWFtLnRvcDpub25lOnRsczprYWwtc3BlZWR0ZXN0LnRvb2xzLmdjb3JlLmNvbTpbJ2h0dHAvMS4xJ106#10,德国,剩482G,昨20G.(0827) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@www.gcore.com:443?flow=&encryption=none&security=tls&sni=www.gcore.com&type=ws&host=www.celebrate.cyou&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#2,美国,剩518G,昨37G.(0827) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDc4LjExMS4xMDEuNDo0NDM6d3M6L2Nsb3VkOmNyZS5kcmVhbS50b3A6bm9uZTp0bHM6a2FsLXNwZWVkdGVzdC50b29scy5nY29yZS5jb206WydodHRwLzEuMSddOg==#10,德国,剩482G,昨20G.(0827) 
+trojan://tDW776HerJ07nbiT8Q6LPBu@185.244.209.62:443?flow=&security=tls&sni=lgs-speedtest.tools.gcore.com&type=ws&header=none&host=cdn.starre.me.it&path=/msdownload&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#8,德国,剩200G,昨44G.(0827) 
+vless://ecd4054a-b635-402b-bd15-5d83bb606b89@194.44.246.206:443?flow=&encryption=none&security=tls&sni=la2-speedtest.tools.gcore.com&type=ws&host=sail.ocean.google&path=/download&headerType=none&alpn=http/1.1&fp=&pbk=&sid=&spx=&allowInsecure=true#1,美国,剩744G,昨15G.(0827) 
+ss://Y2hhY2hhMjAtcG9seTEzMDU6WkdoVkhxbVUxVHBYWlgyOVlDVTBOblJIQDE1MS4yNDguMTA0LjkxOjQ0Mzp3czovY2xvdWQ6ZS5zcGVjaWFsLmx5LmlvOm5vbmU6dGxzOnRlZy1zcGVlZHRlc3QudG9vbHMuZ2NvcmUuY29tOlsnaHR0cC8xLjEnXTo=#19,波兰2,剩244G,昨50G.(0827) 
 
     """
     file: str
